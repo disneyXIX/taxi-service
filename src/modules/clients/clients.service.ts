@@ -18,6 +18,7 @@ export class ClientsService {
       lastName: dto.lastName,
       birthDate: dto.birthDate ?? null,
       email: dto.email ?? null,
+      lastday: dto.lastday ?? null
     });
     return await this.clientsRepository.save(entity);
   }
